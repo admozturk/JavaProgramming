@@ -10,9 +10,15 @@ public class Toyota extends Car{
         System.out.println(brand+model+" is reliable");
     }
 
+   public void start (){
+       System.out.println("Twist the key to ignition start "+brand+" "+model);
 
+   }
 
-
+    @Override
+    public void drive() {
+        System.out.println(brand+ " "+model+ " is driving by co-pilot");
+    }
 }
 /*
 toyota:
