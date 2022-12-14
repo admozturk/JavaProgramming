@@ -1,0 +1,17 @@
+package day37_Inheritance_Continue.AnimalTask;
+
+public class Dog extends Animal {
+
+    // subclass also they can add their own fields and methods
+
+    public Dog (String name, String breed, char gender, int age, String size, String color){
+
+        super(name,breed,gender,age,size,color);
+
+
+    }
+
+    public void bark (){
+        System.out.println(name+ " is barking");
+    }
+}
