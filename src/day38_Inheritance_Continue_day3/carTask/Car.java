@@ -17,11 +17,11 @@ public class Car {
     }
 
     public void start(){ // we cannot use static here because static they do not accept any instance variables
-        System.out.println(brand+ model+ " is starting");
+        System.out.println(brand+" "+model+ " is starting");
     }
 
     public void drive (){
-        System.out.println(brand+ model+ " is starting");
+        System.out.println(brand+" "+ model+ " is starting");
     }
     /*
         public void fly(){
