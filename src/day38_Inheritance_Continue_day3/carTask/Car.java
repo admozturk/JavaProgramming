@@ -1,8 +1,7 @@
 package day38_Inheritance_Continue_day3.carTask;
 
 public class Car {
-    public String brand;
-    public String model;
+    public String brand,model;
     public int year;
     public double price;
     public String color;
@@ -15,6 +14,29 @@ public class Car {
         this.price = price;
         this.color = color;
         this.miles = miles;
+    }
+
+    public void start(){ // we cannot use static here because static they do not accept any instance variables
+        System.out.println(brand+ model+ "is starting");
+    }
+
+    public void drive (){
+        System.out.println(brand+ model+ "is starting");
+    }
+    /*
+        public void fly(){
+        }
+        fly() is not common for all the cars, and parent class should only contain the common feature of all the subclasses
+        */
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", miles=" + miles +
+                '}';
     }
 
 
