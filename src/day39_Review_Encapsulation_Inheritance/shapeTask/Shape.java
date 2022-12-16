@@ -4,7 +4,6 @@ public class Shape {
     private String name;
 
 
-
     public String getName() {
         return name;
     }
@@ -21,14 +20,31 @@ public class Shape {
         this.name = name;
     }
 
-    public void area() {
-
+    public Shape(String name) { // constructor
+        this.name = name;
     }
 
-    public void perimeter (){
+    public double area() {
+        return 0;
+    }
 
+    public double perimeter() {
 
+        return 0;
     }
 
 
 }
+/*
+Shape:
+        variables:
+        name
+
+        Encapsulate the field
+
+        Add a constructor to set the filed
+
+        Methods:
+        area(){}
+        perimeter(){}
+*/
