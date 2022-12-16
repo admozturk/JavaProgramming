@@ -11,7 +11,7 @@ public class Rectangle extends Shape {
 
     public void setLength(double length) {
         if (length <= 0) {
-            System.out.println("Invalid Length " + length);
+            System.err.println("Invalid Length " + length);
             System.exit(1);
         }
         this.length = length;
@@ -23,12 +23,10 @@ public class Rectangle extends Shape {
 
     public void setWidth(double width) {
         if (width <= 0) {
-            System.out.println("Invalid width " + width);
+            System.err.println("Invalid width " + width);
             System.exit(1);
-
-            this.width = width;
         }
-
+        this.width = width;
 
     }
 
@@ -40,12 +38,12 @@ public class Rectangle extends Shape {
 
     @Override
     public double area() {
-        return length*width;
+        return length * width;
     }
 
     @Override
     public double perimeter() {
-        return 2*(length+width);
+        return 2* (length + width);
     }
 
     @Override

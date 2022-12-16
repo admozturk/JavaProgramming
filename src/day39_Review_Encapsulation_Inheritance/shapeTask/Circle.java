@@ -2,7 +2,7 @@ package day39_Review_Encapsulation_Inheritance.shapeTask;
 
 public class Circle extends Shape {
   private double radius;
-  public static double pi;
+  public static double pi= 3.14;
 
 
     public double getRadius() {
@@ -11,7 +11,7 @@ public class Circle extends Shape {
 
     public void setRadius(double radius) {
         if (radius <= 0){
-            System.out.println("Invalid Radius "+radius);
+            System.err.println("Invalid Radius "+radius);
             System.exit(1);
         }
         this.radius = radius;
@@ -25,12 +25,12 @@ public class Circle extends Shape {
 
     @Override
     public double area() {
-        return radius*radius*pi;
+        return radius * radius * pi;
     }
 
     @Override
     public double perimeter() {
-        return 2*radius*pi;
+        return 2 * radius * pi;
     }
 
     @Override
