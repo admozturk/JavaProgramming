@@ -1,8 +1,8 @@
-package day39_Review_Encapsulation_Inheritance.shapeTask;
+package day39_Review_Encapsulation_Inheritance.shape_Task;
 
 public class Circle extends Shape {
-  private double radius;
-  public static double pi= 3.14;
+    private double radius;
+    public static double pi = 3.14;
 
 
     public double getRadius() {
@@ -10,8 +10,8 @@ public class Circle extends Shape {
     }
 
     public void setRadius(double radius) {
-        if (radius <= 0){
-            System.err.println("Invalid Radius "+radius);
+        if (radius <= 0) {
+            System.err.println("Invalid Radius " + radius);
             System.exit(1);
         }
         this.radius = radius;
@@ -20,7 +20,7 @@ public class Circle extends Shape {
 
     public Circle(double radius) {
         super("Circle");
-       setRadius(radius);
+        setRadius(radius);
     }
 
     @Override

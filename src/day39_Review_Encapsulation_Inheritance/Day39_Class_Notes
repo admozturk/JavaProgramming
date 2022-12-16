@@ -6,7 +6,8 @@ Topics: Recap:
 package name: day39_Recap
 
 
-Method Overriding: giving different implementations to the method
+Method Overriding:  giving different implementations to the method
+                    one method with different implementations
 				
 					MUST happen in the child class
 
@@ -19,7 +20,7 @@ Method Overriding: giving different implementations to the method
 
 					ONLY the instance methods (not final & not private) can be overriden
 
-					@Overriden annotation must be applicable
+					@Override annotation must be applicable
 
 
 
