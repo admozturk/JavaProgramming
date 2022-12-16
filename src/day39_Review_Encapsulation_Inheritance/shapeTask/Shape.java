@@ -33,7 +33,13 @@ public class Shape {
         return 0;
     }
 
-
+    @Override
+    public String toString() { // apply to string method and add manually area and perimeter methods
+        return "Shape{" +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
 /*
 Shape:
