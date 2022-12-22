@@ -16,9 +16,9 @@ Method Overriding:  giving different implementations to the method
 					Access modifier need to be same or more visible
 								public > protected > default
 
-					Method we can not override: private, static, final
+					Method we cannot override: private, static, final
 
-					ONLY the instance methods (not final & not private) can be overriden
+					ONLY the instance methods (not final & not private) can be override
 
 					@Override annotation must be applicable
 
