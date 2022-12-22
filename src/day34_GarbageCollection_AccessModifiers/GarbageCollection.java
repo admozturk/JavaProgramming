@@ -28,7 +28,7 @@ public class GarbageCollection {
             dog1.name = "Lucy";
 
 
-            dog1  =     new Dog();
+            dog1  = new Dog();
             dog1.name = "Max";
 
             System.out.println(dog1);
