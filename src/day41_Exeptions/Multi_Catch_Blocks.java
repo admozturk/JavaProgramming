@@ -41,5 +41,7 @@ public class Multi_Catch_Blocks {
             e.printStackTrace();
         }
 
+
+
     }
 }
