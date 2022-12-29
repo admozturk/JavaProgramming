@@ -1,0 +1,226 @@
+Java Day43
+Topic: Abstraction Intro
+			Abstract Method
+			Abstract class
+
+package name: day43_Abstraction
+
+
+Exception:
+	Checked exceptions: They occur during compile time. Without handling this exception
+	                    immediately, you will not be able to run your code.
+	Unchecked exceptions: It only occurs during the runtime. While you are writing the code,
+	                      compiler will not be able to check that exception. when you run the code
+	                      compile will be able to check what kind of exceptions is that.
+
+ Why should we handle the exceptions?
+    Because they terminate the program. You will not be able to continue your work until you handle them.
+
+ How to handle Exceptions?
+	- try & catch block is the best way to handle checked and unchecked exceptions.
+	  checked exceptions are eassy to handle it because it gives you which exception types are you going to
+	  handle it. However unchecked exceptions are unknown. if you dont know which class the exceptions are
+	  you may use parent classes whether Exception or RunTimeException class.
+
+    - Throws Keyword: you use it within the signature it is not recommended to use it because it doesn't  give a
+	  permanent solution.it doesn't handle it permanently. if you need it in methods whenever you call the method
+	  it will continue to give the given exception
+	- Throw keyboard: It is totally different from throws keyboard. it is used for creating the exceptions.
+	  whenever we create it manually we must give the object of the exception and then the constructor
+
+
+throw new RuntimeException("Exception Message");
+
+
+Exceptions Short quiz due by 11:40 am
+
+
+OOP Encapsulation: hiding the data. So you hide the data by using private access modifier. In order to make
+                   sure of the availability of the data you generate the getters and setters.and getters and
+                   setters are the only ways that you can read and write the data.
+
+What's the benefit of making data private?
+     - you will have control for accessing and setting the data through the getters and setters
+
+
+OOP Inheritance: creating IS A relation between classes (parent/child relations  or super/sub relations).
+
+
+
+For what purpose we create parent and child relation?
+    So that the child classes, they can just inherit from the parent class. They don't have to created one by one.
+    They don't have to created it over again.
+    For example think that we are going to create 5 custom classes. If they all have same common features, you
+    can just create those common features one time in the parent class and you can inherit those features from the
+    parent class  to reuse them. it will give us the benefit such as easy to maintain.
+
+
+
+
+what is method overriding?
+   method overriding is giving different implementations to the method. in one class it can have only 1 implementation
+
+
+
+Abstraction Topics:
+		Abstract Method
+		Abstract Class
+		Interface
+
+		abstract class vs class
+		abstract class vs interface
+
+
+Abstraction:
+       - focusing on the essentials(most impotant details) without worrying about the small details(implementations)
+             of the method(ignores the irrelevant unimportant details)
+       - Process of hiding implementation details from the user
+       - only the functionality will be provided to user
+       - for Abstraction it is important what does object do? How doest it do? is not important
+
+
+Abstract method:
+  - There is no body of the method (Method without the body implementations) only signature(abstract)
+  - It is a method that is meant to be overridden
+  - Abstract keyboard is used to create abstract method
+  - Abstract method cannot be STATIC, FINAL, cannot have PRIVATE access modifier
+  - An abstract method can only be created in an ABSTRACT CLASS or in an INTERFACE
+
+
+Abstract classes
+  - Abstract class that's ment to be a parent super class
+  - And it is responsible for providing the reusable variables and methods to the subclasses
+  - Abstract class can not be conquered. it means that from the abstract class you can't create OBJECTS
+  - Abstract keyword is used to create the abstract class
+
+
+abstract class Device{
+	tunrOff();
+
+}
+
+
+abstract class Phone extends Device{
+	call();
+}
+
+
+class Iphone extends Phone{
+
+}
+
+class Samsung extends Phone{
+
+}
+
+
+
+
+
+Car Task:
+	abstract Car:
+		make, model, color, year, price....
+		start();
+		stop()
+
+	Honda extends Car:
+		start(): twist the key to ignition
+
+	Audi extends Car:
+		start(): push the start button
+
+	Tesla extends Car:
+		start(): Say "Start"
+
+
+
+Employee task:
+		abstract Person:
+			name, age, gender(final)
+
+			eat();
+			sleep();
+
+		abstract Employee extends Person:
+			 id(final), jobTitle, salary...
+
+			work();
+
+
+		Tester
+			work(): testing
+
+
+		Developer
+			work(): developing
+
+
+		Teacher
+			work(): teaching
+
+
+		Driver
+			work(): driving
+
+		...
+
+
+
+Shape task:
+
+	Shape:
+		name
+
+		Encapsulate the fields
+
+		Add constructor to set the fields
+
+		area()
+		perimeter()
+		toString(): name, area, perimeter
+
+
+	Create the following subclasses of Shape and add the aditional features that are needed:
+
+				Rectangle:
+					area(): w * l
+					perimeter(): 2 * (w+l)
+
+				Square:
+					area(): s * s
+					perimeter: 4 * s
+
+				Circle:
+					area(): r * r * pi
+					perimeter(): 2 * r * pi
+
+
+
+Animnal task:
+
+		abstract Animal
+
+			eat();
+
+		Dog
+
+		Cat
+
+		Tiger
+
+		Eagle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
