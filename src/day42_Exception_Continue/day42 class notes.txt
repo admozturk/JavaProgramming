@@ -7,18 +7,18 @@ Topic: Exceptions Continue
 
 package name: day42_Exceptions
 
-Warmup task:
-	MorningWorkOut:
+  Warmup task:
+	  MorningWorkOut:
 			1. Do 30 push-ups and try pausing 1.5 seconds in each
-
 
 			2. Do 20 Pull-ups and try pausing 2.5 seconds in each
 
 
 
-Exception Handlings:
+  Exception Handling:
 
-		1. try & catch: used for handling checked & unchecked exceptions
+        Un-Checked Exceptions
+		1. try & catch: used for handling unchecked exceptions it is the only way to handle unchecked exceptions
 
 				try{
 					exception code
@@ -26,27 +26,35 @@ Exception Handlings:
 					e.printStackTrace();
 				}
 
-		2. throws: used for handling checked exceptions ONLY
+        Checked Exceptions;
+        can be handled in two ways.
+        1. Through applying try catch block.(recommended always)
+		2. Throws keyword: This Keyword is used for handling checked exceptions ONLY
 
-						Caller of the method will be responsible for handling the exception
-
-
-
-throw keyword: used for manually throw exception
-
-		throw ExceptionObject
-
-	String browser = "Cydeo";
+		   - Caller of the method will be responsible for handling the exception
 
 
 
+  Throw keyword: used for manually throw exception it does nothing to handle the exception.
+                 it creates the exception. for some specific reason we might need to create an
+                 exception (manually creating the problem). that's the time we use throw keyboard
 
-Monday:
+	    syntax=	throw new ExceptionObject("it accepts a string arguments");
+	        ex= throw new NoSuchElementException("No such an Element");
+
+	   - Throw keyboard also we can only apply for checked exceptions
+
+	    String browser = "Cydeo";
+
+
+
+
+  Monday:
 	OOP Abstraction Intro: Abstract method & abstract class
 
-Thursday:
+  Thursday:
 	OOP ABstraction: Interface
 
 
-Monday:
+  Monday:
 	OOP Abstraction Review
